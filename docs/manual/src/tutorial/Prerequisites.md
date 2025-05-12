@@ -10,10 +10,10 @@ In your crate's `Cargo.toml` add:
 
 ```toml
 [dependencies]
-uniffi = { package = "hc_uniffi",  version = "[latest-version]", features = [ "cli" ] }
+uniffi = { version = "[latest-version]", features = [ "cli" ] }
 
 [build-dependencies]
-uniffi = { package = "hc_uniffi",  version = "[latest-version]", features = [ "build" ] }
+uniffi = { version = "[latest-version]", features = [ "build" ] }
 ```
 
 UniFFI has not reached version `1.0` yet.  Versions are typically specified as `0.[minor-version]`.
