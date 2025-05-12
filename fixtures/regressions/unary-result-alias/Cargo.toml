@@ -10,14 +10,14 @@ name = "uniffi_unary_result_alias"
 crate-type = ["lib", "cdylib"]
 
 [dependencies]
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 thiserror = "1.0"
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

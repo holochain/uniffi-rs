@@ -11,16 +11,16 @@ crate-type = ["lib", "cdylib"]
 
 [dependencies]
 thiserror = "1.0"
-uniffi = { path = "../../uniffi" }
+uniffi = { package = "hc_uniffi",  path = "../../uniffi" }
 
 [build-dependencies]
-uniffi = {path = "../../uniffi", features = ["build"] }
+uniffi = { package = "hc_uniffi", path = "../../uniffi", features = ["build"] }
 
 [dev-dependencies]
 camino = "1.0.8"
 glob = "0.3"
-uniffi = { path = "../../uniffi", features = ["bindgen-tests"] }
-uniffi_bindgen = { path = "../../uniffi_bindgen" }
+uniffi = { package = "hc_uniffi",  path = "../../uniffi", features = ["bindgen-tests"] }
+uniffi_bindgen = { package = "hc_uniffi_bindgen", path = "../../uniffi_bindgen" }
 uniffi_testing = { path = "../../uniffi_testing" }
 
 [features]

@@ -16,14 +16,14 @@ name = "uniffi_sublib"
 
 [dependencies]
 anyhow = "1"
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 uniffi-fixture-ext-types-lib-one = {path = "../uniffi-one"}
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

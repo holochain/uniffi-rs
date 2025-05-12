@@ -10,7 +10,7 @@ name = "uniffi_fixture_metadata"
 
 [dependencies]
 thiserror = "1.0"
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 uniffi_meta = { path = "../../uniffi_meta" }
 uniffi_core = { path = "../../uniffi_core" }
 

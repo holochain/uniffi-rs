@@ -35,7 +35,7 @@ You can now run `uniffi-bindgen` from your project using `cargo run --features=u
 In a multiple crates workspace, you can create a separate crate for running `uniffi-bindgen`:
 
   - Name the crate `uniffi-bindgen`, add it to your workspace.
-  - Add this dependency to `Cargo.toml`: `uniffi = {version = "0.XX.0", features = ["cli"] }`
+  - Add this dependency to `Cargo.toml`: `uniffi = { package = "hc_uniffi", version = "0.XX.0", features = ["cli"] }`
   - As above, add the `uniffi-bindgen` binary target
 
 Then your can run `uniffi-bindgen` from any crate in your project using `cargo run -p uniffi-bindgen [args]`

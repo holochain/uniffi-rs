@@ -11,14 +11,14 @@ name = "uniffi_fixture_callbacks"
 
 [dependencies]
 # Add the "scaffolding-ffi-buffer-fns" feature to make sure things can build correctly
-uniffi = { workspace = true, features=["scaffolding-ffi-buffer-fns"] }
+uniffi = { package = "hc_uniffi", workspace = true, features=["scaffolding-ffi-buffer-fns"] }
 thiserror = "1.0"
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

@@ -14,4 +14,4 @@ release-backend-crates = [
     "-p", "uniffi_testing",
     "-p", "uniffi_udl",
 ]
-release-uniffi = ["release", "--execute", "--no-publish", "-p", "uniffi"]
+release-hc_uniffi = ["release", "--execute", "--no-publish", "-p", "uniffi"]

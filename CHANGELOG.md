@@ -474,7 +474,7 @@ Significant patches to UniFFI's builtin bindings which you will need to port inc
 
 - The UniFFI crate organization has been significantly reworked:
   - Projects that use UniFFI for binding/scaffolding generation now only need to depend on the `uniffi` crate and no longer need to depend on `uniffi_bindgen`, `uniffi_build`, etc.
-  - The version numbers for each crate will no longer by kept in sync after this release.  In particular `uniffi` will have breaking changes less often than `uniffi_bindgen` and other crates.  This means that UniFFI consumers that specify their versions like `uniffi = "0.23"` will not need to bump their `uniffi` version as often as before.
+  - The version numbers for each crate will no longer by kept in sync after this release.  In particular `uniffi` will have breaking changes less often than `uniffi_bindgen` and other crates.  This means that UniFFI consumers that specify their versions like `hc_uniffi = "0.23"` will not need to bump their `uniffi` version as often as before.
 - Callback interface method calls are no longer logged (#1439)
 
 ## v0.22.0 - (_2022-12-16_)

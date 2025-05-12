@@ -14,10 +14,10 @@ name = "uniffi_one"
 anyhow = "1"
 bytes = "1.3"
 thiserror = "1"
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

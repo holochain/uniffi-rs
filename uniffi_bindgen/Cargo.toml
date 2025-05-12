@@ -1,5 +1,5 @@
 [package]
-name = "uniffi_bindgen"
+name = "hc_uniffi_bindgen"
 version = "0.29.1"
 description = "a multi-language bindings generator for rust (codegen and cli tooling)"
 documentation = "https://mozilla.github.io/uniffi-rs"

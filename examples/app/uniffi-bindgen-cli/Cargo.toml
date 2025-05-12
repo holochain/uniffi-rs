@@ -9,7 +9,7 @@ name = "uniffi-bindgen"
 path = "uniffi-bindgen.rs"
 
 [dependencies]
-uniffi = { workspace = true, features = ["cli"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["cli"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

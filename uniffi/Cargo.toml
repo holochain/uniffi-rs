@@ -1,5 +1,5 @@
 [package]
-name = "uniffi"
+name = "hc_uniffi"
 description = "a multi-language bindings generator for rust"
 documentation = "https://mozilla.github.io/uniffi-rs"
 homepage = "https://mozilla.github.io/uniffi-rs"
@@ -14,7 +14,7 @@ keywords = ["ffi", "bindgen"]
 readme = "../README.md"
 
 [dependencies]
-uniffi_bindgen = { path = "../uniffi_bindgen", version = "=0.29.1", optional = true }
+uniffi_bindgen = { package = "hc_uniffi_bindgen", path = "../uniffi_bindgen", version = "=0.29.1", optional = true }
 uniffi_build = { path = "../uniffi_build", version = "=0.29.1", optional = true }
 uniffi_core = { path = "../uniffi_core", version = "=0.29.1" }
 uniffi_macros = { path = "../uniffi_macros", version = "=0.29.1" }

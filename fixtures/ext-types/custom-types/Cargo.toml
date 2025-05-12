@@ -13,13 +13,13 @@ name = "ext_types_custom"
 anyhow = "1"
 bytes = "1.3"
 thiserror = "1.0"
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

@@ -9,7 +9,7 @@ publish = false
 name = "uniffi_uitests"
 
 [dependencies]
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 uniffi_macros = { path = "../../uniffi_macros", features = ["trybuild"] }
 thiserror = "1.0"
 

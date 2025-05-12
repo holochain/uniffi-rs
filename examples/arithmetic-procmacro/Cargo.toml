@@ -10,11 +10,11 @@ crate-type = ["lib", "cdylib"]
 name = "arithmeticpm"
 
 [dependencies]
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 thiserror = "1.0"
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]

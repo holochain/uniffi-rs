@@ -11,13 +11,13 @@ name = "uniffi_regression_logging_callback_interface"
 
 [dependencies]
 log = "0.4"
-uniffi = { workspace = true }
+uniffi = { package = "hc_uniffi", workspace = true }
 
 [build-dependencies]
-uniffi = { workspace = true, features = ["build"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["build"] }
 
 [dev-dependencies]
-uniffi = { workspace = true, features = ["bindgen-tests"] }
+uniffi = { package = "hc_uniffi", workspace = true, features = ["bindgen-tests"] }
 
 [features]
 ffi-trace = ["uniffi/ffi-trace"]
